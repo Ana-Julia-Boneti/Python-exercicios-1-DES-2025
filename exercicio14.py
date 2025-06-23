@@ -4,10 +4,12 @@
 #Acima de R$ 300,00 têm 5%
 #Menor ou igual a R$ 300,00 não têm desconto
 
-valor = int(input("digite o valor  compra"))
-if  valor <= 500:
-    desconto = ("voce ganhou 10% de desconto")
-elif valor >= 300:
-    desconto =  ("voce ganhou 5% de desconto")
+compra = int(input("Digite o valor da compra em reais."))
+
+if compra >500:
+    print("Voce ganhou 10% de desconto.")
+elif compra >300:
+    print("Voce ganhou 5% de desconto")
 else:
-    print (f"o valor de {desconto} é a % {valor:.2f}")
+    print("Voce nao comseguiu ganhar desconto.")
+    # finalizado
